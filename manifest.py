@@ -5,20 +5,22 @@ import time
 
 class Manifest:
 
-    def __init__(self, length: int = 70, width: int = 14, pause: float = 1e-6):
+    def __init__(self, length: int = 120, width: int = 30, pause: float = 0.07):
         self.length = length
         self.width = width
         self.pause = pause
 
     @staticmethod
     def read_txt(file_path):
-        with open(file_path, 'r', encoding="utf8") as f:
+        with open(file_path, 'r') as f:
             return f.read()
 
-    def print_one_by_one(self, char: str):
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        time.sleep(self.pause)
+    def print_one_by_one(self, text: str):
+        for char in text:
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            time.sleep(self.pause)
+        sys.stdout.write(' ')
 
     def print_data(self, content):
         os.system("")
@@ -32,10 +34,3 @@ class Manifest:
                         k = 0
                     self.print_one_by_one(char)
                     k += 1
-
-
-if __name__ == '__main__':
-    manifest = Manifest()
-    content = manifest.read_txt('text.txt')
-    manifest.print_data(content)
-

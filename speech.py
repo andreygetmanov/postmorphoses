@@ -6,10 +6,10 @@ import soundfile
 class SpeechGenerator:
 
     def __init__(self,
-                 path: str,
                  folder_id: str,
+                 path: str = './audio.raw',
                  api_token: str = None,
-                 voice: str = 'filipp',
+                 voice: str = 'alena',
                  lang: str = 'ru-RU',
                  format: str = 'lpcm',
                  sample_rate_hz: int = 48000,
@@ -48,7 +48,7 @@ class SpeechGenerator:
                 f.write(audio_content)
         audiodata, samplerate = soundfile.read(self.path, channels=self.channels,
                                                samplerate=self.sample_rate_hz, subtype=self.subtype)
-        sounddevice.play(audiodata, blocking=True)
+        sounddevice.play(audiodata)
 
     def _synthesize(self, text: str) -> bytes:
         """

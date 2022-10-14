@@ -1,0 +1,15 @@
+<title>postmorphoses</title>
+<style>
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+</style>
+<div class="form">
+<form action="{{ url_for('gfg')}}" method="post">
+<input type="text" id="textforgen" name="txtgen" placeholder="Что такое природа?">
+<button type="submit">Отправить</button>
+</form>
+</div>
