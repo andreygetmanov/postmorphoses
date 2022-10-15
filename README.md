@@ -11,4 +11,4 @@
 Для демонстрации сначала нужно установить виртуальное окружение из `requirements.txt`, затем вставить API-ключ от YandexSpeechKit в файл `auth.txt`, запустить скрипт `form.py` (поднять сайт-форму), открыть её, введя в строке браузера `http://127.0.0.1:5000/`, а затем запустить **из командной строки** файл `main.py`. Пример команды:
 `venv\Scripts\python.exe main.py`
 
-Firstly exposed on [OtherSiders](https://othersiders.space/) Festival took place at ITMO 15.10.2022
+Firstly exposed on [OtherSiders](https://othersiders.space/) Festival at ITMO 15.10.2022
