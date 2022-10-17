@@ -79,6 +79,6 @@ class SpeechGenerator:
 
     @staticmethod
     def _get_api_token() -> str:
-        with open('auth.txt', 'r') as f:
+        with open('scripts/auth.txt', 'r') as f:
             token = f.read().split(':')[1]
         return token

@@ -23,6 +23,7 @@ class Manifest:
         sys.stdout.write(' ')
 
     def print_data(self, content):
+        # TODO loop console output
         os.system("")
         size = self.length * self.width
         k = 0

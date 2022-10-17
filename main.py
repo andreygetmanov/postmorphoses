@@ -1,8 +1,8 @@
 import pandas as pd
 
-from model import GPTModel
-from speech import SpeechGenerator
-from manifest import Manifest
+from scripts.model import GPTModel
+from scripts.speech import SpeechGenerator
+from scripts.manifest import Manifest
 
 
 def get_data(path: str):
@@ -12,8 +12,8 @@ def get_data(path: str):
 
 
 if __name__ == '__main__':
-    texts = get_data('ruscorpora_content.xlsx')
-    text_file = 'text_for_gen.txt'
+    texts = get_data('data/ruscorpora_content.xlsx')
+    text_file = 'data/text_for_gen.txt'
     manifest = Manifest(pause=0.07)
     history = manifest.read_txt(text_file)
     GPTModel = GPTModel()
