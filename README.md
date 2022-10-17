@@ -11,4 +11,8 @@
 Для демонстрации сначала нужно установить виртуальное окружение из `requirements.txt`, затем вставить API-ключ от [YandexSpeechKit](https://cloud.yandex.ru/services/speechkit) в файл `auth.txt`, запустить скрипт `form.py` (поднять сайт-форму), открыть её, введя в строке браузера `http://127.0.0.1:5000/`, а затем запустить **в командной строке** из-под виртуального окружения файл `main.py`. Пример команды:
 `venv/Scripts/python.exe main.py`
 
-Firstly exposed on [OtherSiders](https://othersiders.space/) Festival at ITMO 15.10.2022
+---
+
+**Exposition history**
+
+First exposed on [*OtherSiders*](https://othersiders.space/) Festival at ITMO 15.10.2022: [commit](https://github.com/andreygetmanov/postmorphoses/tree/e01e5eb90da39c74704ae84e785725896b58f81b)
