@@ -15,6 +15,4 @@
 
 **Exposition history**
 
-First exposed on [*OtherSiders*](https://othersiders.space/) Festival at ITMO 15.10.2022: [commit](https://github.com/andreygetmanov/postmorphoses/tree/e01e5eb90da39c74704ae84e785725896b58f81b)
-
-[TV report](https://www.youtube.com/watch?v=j546fPJ99d4) (2:56) |
+First exposed on [*OtherSiders*](https://othersiders.space/) Festival at ITMO 15.10.2022: [commit](https://github.com/andreygetmanov/postmorphoses/tree/e01e5eb90da39c74704ae84e785725896b58f81b) | [TV report](https://www.youtube.com/watch?v=j546fPJ99d4) (2:56) |
