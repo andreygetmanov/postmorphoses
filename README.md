@@ -12,6 +12,10 @@
 `venv/Scripts/python.exe main.py`
 
 ---
+<video width="320" height="240" controls>
+  <source src="video/postmorphoses_demo_final_compressed.mp4" type="video/mp4">
+</video>
+---
 
 **Exposition history**
 
