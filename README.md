@@ -13,7 +13,7 @@
 
 ---
 
-[![postmorphoses demo]()](https://youtu.be/Htbzcj6OevE)
+[![postmorphoses demo](https://github.com/andreygetmanov/postmorphoses/blob/main/video/preview.jpg)](https://youtu.be/Htbzcj6OevE)
 
 ---
 
