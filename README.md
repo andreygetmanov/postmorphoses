@@ -13,7 +13,7 @@
 
 ---
 
-[![Watch the video]([https://i.imgur.com/vKb2F1B.png](https://github.com/andreygetmanov/postmorphoses/blob/main/video/preview.jpg))]([https://youtu.be/vt5fpE0bzSY](https://github.com/andreygetmanov/postmorphoses/blob/main/video/postmorphoses_demo_final_compressed.mp4))
+[![Watch the video](https://github.com/andreygetmanov/postmorphoses/blob/main/video/preview.jpg)](https://github.com/andreygetmanov/postmorphoses/blob/main/video/postmorphoses_demo_final_compressed.mp4)
 
 ---
 
