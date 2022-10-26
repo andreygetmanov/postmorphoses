@@ -15,6 +15,8 @@
 
 [![postmorphoses demo](http://img.youtube.com/vi/Htbzcj6OevE/0.jpg)](http://www.youtube.com/watch?v=Htbzcj6OevE)
 
+https://github.com/andreygetmanov/postmorphoses/blob/1943bbf32d96f329381712ae0025258c8f1d73b6/video/postmorphoses_demo_final_compressed.mp4
+
 ---
 
 **Exposition history**
