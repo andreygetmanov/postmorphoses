@@ -21,4 +21,4 @@ https://user-images.githubusercontent.com/91334765/197907341-aaa27f09-7fe7-4944-
 
 First exposed on [*OtherSiders*](https://othersiders.space/) Festival at ITMO 15.10.2022: [commit](https://github.com/andreygetmanov/postmorphoses/tree/e01e5eb90da39c74704ae84e785725896b58f81b) 
 
-| [TV report](https://www.youtube.com/watch?v=j546fPJ99d4) (2:56) |
+| [TV report](https://www.youtube.com/watch?v=j546fPJ99d4) (2:56) | [Photos](https://drive.google.com/drive/folders/1cwIgdN5Q8pYKYbrGdnrmo1s54x3P1sz8?usp=sharing) |
