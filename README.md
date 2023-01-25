@@ -23,7 +23,7 @@ https://user-images.githubusercontent.com/91334765/197907341-aaa27f09-7fe7-4944-
 
 [*Video Studies Festival*](https://vk.com/event215398048) at Mariinsky Theatre II 21.01.2023: [commit](https://github.com/andreygetmanov/postmorphoses/tree/e01e5eb90da39c74704ae84e785725896b58f81b) 
 
-| [Photos](https://drive.google.com/drive/folders/15A78HcP9dwwMM7GpHmIIeQbpGsqFncIn?usp=sharing) |
+| [Video Teaser](https://drive.google.com/file/d/123ywV6nJ-8ZzDuu5sSib-HxBA2ENveP0/view?usp=share_link) | [Photos](https://drive.google.com/drive/folders/15A78HcP9dwwMM7GpHmIIeQbpGsqFncIn?usp=sharing) |
 
 ---
 
