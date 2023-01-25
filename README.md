@@ -19,6 +19,14 @@ https://user-images.githubusercontent.com/91334765/197907341-aaa27f09-7fe7-4944-
 
 **Exposition history**
 
-First exposed on [*OtherSiders*](https://othersiders.space/) Festival at ITMO 15.10.2022: [commit](https://github.com/andreygetmanov/postmorphoses/tree/e01e5eb90da39c74704ae84e785725896b58f81b) 
+---
+
+Firstly exposed on the [*OtherSiders*](https://othersiders.space/) Festival at ITMO 15.10.2022: [commit](https://github.com/andreygetmanov/postmorphoses/tree/e01e5eb90da39c74704ae84e785725896b58f81b) 
 
 | [TV report](https://www.youtube.com/watch?v=j546fPJ99d4) (2:56) | [Photos](https://drive.google.com/drive/folders/1cwIgdN5Q8pYKYbrGdnrmo1s54x3P1sz8?usp=sharing) |
+
+---
+
+[*Video Studies Festival*](https://vk.com/event215398048) at Mariinsky Theatre II 21.01.2023: [commit](https://github.com/andreygetmanov/postmorphoses/tree/e01e5eb90da39c74704ae84e785725896b58f81b) 
+
+| [Photos](https://drive.google.com/drive/folders/15A78HcP9dwwMM7GpHmIIeQbpGsqFncIn?usp=sharing) |
