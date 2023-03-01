@@ -1,5 +1,6 @@
 import pandas as pd
 import re
+import logging
 
 from scripts.model import GPTModel
 from scripts.speech import SpeechGenerator
@@ -21,7 +22,7 @@ def offensive_filter(text_to_clean: str, offensive_words: list) -> str:
 def censorship(text_to_clean: str) -> str:
     words_to_del = ['путин', 'хох', 'украин', 'войн', 'террор', 'правительств']
     pattern = re.compile('|'.join(words_to_del), re.IGNORECASE)
-    clean_text = pattern.sub('у меня нет слов', text_to_clean)
+    clean_text = pattern.sub('у меня нет слов ', text_to_clean)
     return clean_text
 
 
@@ -32,6 +33,7 @@ def get_data(path: str):
 
 
 if __name__ == '__main__':
+    logging.basicConfig(filename='misc/krasnoholmskaya.log', level=logging.INFO)
     texts = get_data('data/ruscorpora_content.xlsx')
     offensive_words = open('data/offensive_words.txt', 'r', encoding='utf-8').read().split(', ')
     text_file = 'data/text_for_gen.txt'
@@ -45,6 +47,8 @@ if __name__ == '__main__':
             if new_text != history:
                 text = new_text if new_text else text
                 history = text
+                logging.info(f'Input: {text}')
             gen_text = censorship(offensive_filter(GPTModel.generate(text), offensive_words))
+            logging.info(f'Generated text: {gen_text}')
             SpeechGenerator.play(gen_text)
             manifest.print_one_by_one(gen_text)
