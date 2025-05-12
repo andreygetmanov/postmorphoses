@@ -1,32 +1,105 @@
-`postmorphoses`
-
-Разве *лес* не похож на *речь*?
-Разве не теряешься среди пульсации деревьев-обрывков фраз? не сливаешься с мхом слов?
-Разве не напоминает бесконечное воспроизводство природы комбинаторную репликацию речи?
-
-Проект `postmorphoses` исследует нашу работу, которая заставляет природу видоизменяться и плести миф о себе, захватывая нас в его сети.
-
-Обрывки фраз со словом «природа», взятые из [национального корпуса русского языка](https://ruscorpora.ru/), циклично подаются на вход нейросети [RuGPT-3](https://huggingface.co/sberbank-ai/rugpt3medium_based_on_gpt2), ответ выводится в консоль. Так создаётся бесконечный *манифест-палимпсест* природы. Но в него можно внести изменения: если ввести в поле «Что такое природа?» свою версию ответа на вопрос (или вообще что угодно), ответ обработается нейросетью и займёт место среди прочих.
-
-Для демонстрации сначала нужно установить виртуальное окружение из `requirements.txt`, затем вставить API-ключ от [YandexSpeechKit](https://cloud.yandex.ru/services/speechkit) в файл `scripts/auth.txt`, запустить скрипт `form.py` (поднять сайт-форму), открыть её, введя в строке браузера `http://127.0.0.1:5000/`, а затем запустить **в командной строке** из-под виртуального окружения файл `main.py`. Пример команды:
-`venv/Scripts/python.exe main.py`
+# postmorphoses
 
 ---
 
-https://user-images.githubusercontent.com/91334765/197907341-aaa27f09-7fe7-4944-9ce3-0a04f0ebba10.mp4
+![License](https://img.shields.io/github/license/andreygetmanov/postmorphoses?style=flat&logo=opensourceinitiative&logoColor=white&color=blue)
+[![OSA-improved](https://img.shields.io/badge/improved%20by-OSA-yellow)](https://github.com/aimclub/OSA)
+
+Built with:
+
+![aiohttp](https://img.shields.io/badge/AIOHTTP-2C5BB4.svg?style={0}&logo=AIOHTTP&logoColor=white)
+![flask](https://img.shields.io/badge/Flask-000000.svg?style={0}&logo=Flask&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458.svg?style={0}&logo=pandas&logoColor=white)
+![tensorflow](https://img.shields.io/badge/TensorFlow-FF6F00.svg?style={0}&logo=TensorFlow&logoColor=white)
 
 ---
 
-**Exposition history**
+## Overview
+
+postmorphoses is an interactive art project exploring the relationship between nature, language, and artificial intelligence. It generates a continuously evolving 'manifesto' through user contributions and AI-driven text generation, inviting reflection on how we perceive and represent the natural world.
 
 ---
 
-[*Video Studies Festival*](https://vk.com/event215398048) at Mariinsky Theatre II 21.01.2023: [commit](https://github.com/andreygetmanov/postmorphoses/tree/e01e5eb90da39c74704ae84e785725896b58f81b) 
+## Table of Contents
 
-| [Video Teaser](https://drive.google.com/file/d/123ywV6nJ-8ZzDuu5sSib-HxBA2ENveP0/view?usp=share_link) | [Photos](https://drive.google.com/drive/folders/15A78HcP9dwwMM7GpHmIIeQbpGsqFncIn?usp=sharing) |
+- [Core features](#core-features)
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Citation](#citation)
+
+---
+## Core features
+
+1. **Text Generation with RuGPT-3**: Utilizes the RuGPT-3 model to generate text based on input prompts, creating a continuous and evolving 'manifesto'.
+2. **Interactive Input via Web Form**: Provides a web interface (using Flask) where users can submit their own text, influencing the generated output of the model.
+3. **Data Source from Russian National Corpus**: Leverages data extracted from the Russian National Corpus to provide initial prompts and context for the text generation process, focusing on the theme of 'nature'.
+4. **Persistence of Generated Text**: Stores and reads previously generated text from a file ('data/text_for_gen.txt'), allowing the model to build upon its previous outputs.
 
 ---
 
-[*OtherSiders*](https://othersiders.space/) Festival at ITMO 15.10.2022: [commit](https://github.com/andreygetmanov/postmorphoses/tree/e01e5eb90da39c74704ae84e785725896b58f81b) 
+## Installation
 
-| [TV report](https://www.youtube.com/watch?v=j546fPJ99d4) (2:56) | [Photos](https://drive.google.com/drive/folders/1cwIgdN5Q8pYKYbrGdnrmo1s54x3P1sz8?usp=sharing) | [Log](https://github.com/andreygetmanov/postmorphoses/blob/main/misc/othersiders_log.txt) |
+Install postmorphoses using one of the following methods:
+
+**Build from source:**
+
+1. Clone the postmorphoses repository:
+```sh
+git clone https://github.com/andreygetmanov/postmorphoses
+```
+
+2. Navigate to the project directory:
+```sh
+cd postmorphoses
+```
+
+3. Install the project dependencies:
+
+```sh
+pip install -r requirements.txt
+```
+
+---
+
+## Contributing
+
+- **[Report Issues](https://github.com/andreygetmanov/postmorphoses/issues)**: Submit bugs found or log feature requests for the project.
+
+---
+
+## License
+
+This project is protected under the GNU General Public License v3.0. For more details, refer to the [LICENSE](https://github.com/andreygetmanov/postmorphoses/tree/main/LICENSE) file.
+
+---
+
+## Citation
+
+If you use this software, please cite it as below.
+
+### APA format:
+
+    andreygetmanov (2022). postmorphoses repository [Computer software]. https://github.com/andreygetmanov/postmorphoses
+
+### BibTeX format:
+
+    @misc{postmorphoses,
+
+        author = {andreygetmanov},
+
+        title = {postmorphoses repository},
+
+        year = {2022},
+
+        publisher = {github.com},
+
+        journal = {github.com repository},
+
+        howpublished = {\url{https://github.com/andreygetmanov/postmorphoses.git}},
+
+        url = {https://github.com/andreygetmanov/postmorphoses.git}
+
+    }
+
+---
