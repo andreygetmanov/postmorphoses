@@ -4,18 +4,21 @@ import soundfile
 
 
 class SpeechGenerator:
+    """
+    Yandex Speech Synthesis Generator."""
 
-    def __init__(self,
-                 folder_id: str,
-                 path: str = './audio.raw',
-                 api_token: str = None,
-                 voice: str = 'alena',
-                 lang: str = 'ru-RU',
-                 format: str = 'lpcm',
-                 sample_rate_hz: int = 48000,
-                 channels: int = 1,
-                 subtype: str = 'pcm_16'
-                 ):
+    def __init__(
+        self,
+        folder_id: str,
+        path: str = "./audio.raw",
+        api_token: str = None,
+        voice: str = "alena",
+        lang: str = "ru-RU",
+        format: str = "lpcm",
+        sample_rate_hz: int = 48000,
+        channels: int = 1,
+        subtype: str = "pcm_16",
+    ):
         """
         :param path: path to created file
         :param folder_id: YandexCloud folder id
@@ -46,8 +49,12 @@ class SpeechGenerator:
         with open(self.path, "wb") as f:
             for audio_content in self._synthesize(text=text):
                 f.write(audio_content)
-        audiodata, samplerate = soundfile.read(self.path, channels=self.channels,
-                                               samplerate=self.sample_rate_hz, subtype=self.subtype)
+        audiodata, samplerate = soundfile.read(
+            self.path,
+            channels=self.channels,
+            samplerate=self.sample_rate_hz,
+            subtype=self.subtype,
+        )
         sounddevice.play(audiodata)
 
     def _synthesize(self, text: str) -> bytes:
@@ -56,29 +63,40 @@ class SpeechGenerator:
         :param text: text for synthesis
         :return: array of bytes
         """
-        url = 'https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize'
+        url = "https://tts.api.cloud.yandex.net/speech/v1/tts:synthesize"
         headers = {
-            'Authorization': 'Api-Key ' + self.api_token,
+            "Authorization": "Api-Key " + self.api_token,
         }
 
         data = {
-            'text': text,
-            'folderId': self.folder_id,
-            'voice': self.voice,
-            'lang': self.lang,
-            'format': self.format,
-            'sampleRateHertz': self.sample_rate_hz
+            "text": text,
+            "folderId": self.folder_id,
+            "voice": self.voice,
+            "lang": self.lang,
+            "format": self.format,
+            "sampleRateHertz": self.sample_rate_hz,
         }
 
         with requests.post(url, headers=headers, data=data, stream=True) as resp:
             if resp.status_code != 200:
-                raise RuntimeError("Invalid response received: code: %d, message: %s" % (resp.status_code, resp.text))
+                raise RuntimeError(
+                    "Invalid response received: code: %d, message: %s"
+                    % (resp.status_code, resp.text)
+                )
 
             for chunk in resp.iter_content(chunk_size=None):
                 yield chunk
 
     @staticmethod
     def _get_api_token() -> str:
-        with open('scripts/auth.txt', 'r') as f:
-            token = f.read().split(':')[1]
+        """
+        Retrieves the API token from a file.
+
+            Reads the 'scripts/auth.txt' file, splits the content by ':' and returns the second element which is assumed to be the API token.
+
+            Returns:
+                str: The API token read from the file.
+        """
+        with open("scripts/auth.txt", "r") as f:
+            token = f.read().split(":")[1]
         return token
